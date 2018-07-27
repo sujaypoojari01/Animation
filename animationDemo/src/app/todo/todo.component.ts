@@ -13,11 +13,14 @@ import {
   styleUrls: ["./todo.component.css"],
   animations: [
     trigger("fade", [
+      state("void", style({ opacity: 0 })),
       transition("void => *", [
-        style({ backgroundColor: "green", opacity: 0 }),
+        style({ backgroundColor: "green" }),
         animate(1000)
       ]),
-      transition("* => void", [animate(1000, style({ opacity: 0 }))])
+      transition("* => void", [
+        animate(1000, style({ backgroundColor: "red" }))
+      ])
     ])
   ]
 })

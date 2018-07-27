@@ -10,6 +10,6 @@ import { AppComponent } from "./app.component";
   declarations: [AppComponent, TodoComponent],
   imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent, TodoComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
